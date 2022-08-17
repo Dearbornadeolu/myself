@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#mobile {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 70px;
+    grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+#mobilenav {
+    position: static;
+    top: 0;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.logo {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 0 0 0;
+}
+
+#mobilenavmenu {
+    background-color: black;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: block;
+}
+
+#mobilenavmenu a {
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    margin-bottom: 85%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#intro {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#imgIntro {
+    width: 100%;
+}
+
+#introcont {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 4px;
+}
+
+#introcont h1 {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#introcont p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+#introcont h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#introcont OL {
+    padding-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+#aboutme{
+    border-top: 2px solid black;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#aboutme h1{
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+#portfolio{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 20px;
+}
+.portfolioContainer h4{
+    text-transform: uppercase;
+}
+.portfolioContainer a{
+    display: block;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    border: 1.5px rgb(0, 0, 0) solid;
+    margin: auto;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.portfolioContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#portfolio1{
+    width: 50%;
+    background-color: darkgrey;
+    height: auto;
+    padding: 2px;
+    border-radius: 0 0 10px 10px ;
+}
+#portfolio1 img{
+    max-width: 100%;
+    height: auto;
+}
+#portfolio1 h4{
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: 2px solid black;
+    text-align: center;
+}
+#portfolio1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+    line-height: 16px;
+}
+
+#portfolio2{
+    width: 50%;
+    background-color: darkgrey;
+    height: auto;
+    padding: 2px;
+    border-radius: 0 0 10px 10px ;
+}
+#portfolio2 img{
+    max-width: 100%;
+    height: auto;
+}
+#portfolio2 h4{
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: 2px solid black;
+    text-align: center;
+}
+#portfolio2 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+    line-height: 16px;
+}
+#contact{
+    border-top: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#contact h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+#contact div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+@media screen and (min-width : 500px) {
+    body{
+    }
+}
